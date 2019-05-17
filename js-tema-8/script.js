@@ -10,7 +10,7 @@ const valideForm = () => {
     const errorLname = document.getElementById('errorLname');
     const errorPhone = document.getElementById('errorPhone');
 
-    if (username.value.length  < 4) {
+    if (username.value.length < 4) {
         errorUsername.style.padding = '10px 0px';
         errorUsername.style.width = '402px';
         errorUsername.style.border = '1px solid red';
@@ -19,7 +19,7 @@ const valideForm = () => {
         
     } 
 
-    if (email.value.length  == 0) {
+    if (email.value.length == 0) {
         errorEmail.style.padding = '10px 0px';
         errorEmail.style.width = '402px';
         errorEmail.style.border = '1px solid red';
@@ -27,7 +27,7 @@ const valideForm = () => {
         errorEmail.innerHTML = 'Please enter an Email.';
     } 
     
-    if (firstName.value.length  == 0) {
+    if (firstName.value.length == 0) {
         errorFname.style.padding = '10px 0px';
         errorFname.style.width = '402px';
         errorFname.style.border = '1px solid red';
@@ -35,7 +35,7 @@ const valideForm = () => {
         errorFname.innerHTML = 'Please enter a First Name.';  
     }
     
-    if (lastName.value.length  == 0) {
+    if (lastName.value.length == 0) {
         errorLname.style.padding = '10px 0px';
         errorLname.style.width = '402px';
         errorLname.style.border = '1px solid red';
@@ -43,13 +43,11 @@ const valideForm = () => {
         errorLname.innerHTML = 'Please enter a Last Name.';
     }
     
-    if (phone.value.length  < 10) {
+    if (phone.value.length < 10) {
         errorPhone.style.padding = '10px 0px';
         errorPhone.style.width = '402px';
         errorPhone.style.border = '1px solid red';
         errorPhone.style.backgroundColor = 'pink';
         errorPhone.innerHTML = 'Please enter a Phone.';
-
-
     }
 }
